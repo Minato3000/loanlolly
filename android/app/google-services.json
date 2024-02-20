@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "688974572258",
+    "project_id": "loanlolly-45c54",
+    "storage_bucket": "loanlolly-45c54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688974572258:android:cbe37305f164917a9dccbb",
+        "android_client_info": {
+          "package_name": "com.example.loanlolly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX15ek7DdphOVLvwpQj39J-JaLfO0VWzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
