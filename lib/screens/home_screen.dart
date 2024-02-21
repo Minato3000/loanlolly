@@ -28,14 +28,14 @@ class _HomeScreenState extends State<HomeScreen> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => BorrowerScreen(),
+                builder: (context) => LoanGetScreen(),
               ),
             );
           } else {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => _isToggleOn ? LoanApproveScreen() : LoanGetScreen(),
+                builder: (context) => LoanApproveScreen(),
               ),
             );
           }
