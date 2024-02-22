@@ -18,7 +18,7 @@ class _LoanApproveScreenState extends State<LoanApproveScreen> {
     return Scaffold(
       key: _scaffoldKey,
       drawer: CustomDrawer(),
-      appBar: CustomAppBar(scaffoldKey: _scaffoldKey, headerText: "Approve", onTap: () {}),
+      appBar: CustomAppBar(scaffoldKey: _scaffoldKey, headerText: "Lend Loans", onTap: () {}),
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -27,7 +27,7 @@ class _LoanApproveScreenState extends State<LoanApproveScreen> {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
-                'Active Lendings',
+                'New Lend Requests',
                 style: TextStyle(fontSize: 20.0),
               ),
             ),

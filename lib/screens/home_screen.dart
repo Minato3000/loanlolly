@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           Expanded(
-            child: _isToggleOn ? LenderHomeScreen() : BorrowerScreen(), 
+            child: _isToggleOn ? LenderHomeScreen() : BorrowerScreen(),
           ),
         ],
       ),

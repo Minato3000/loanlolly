@@ -51,7 +51,7 @@ class ApprovalCardWidget extends StatelessWidget {
                   ElevatedButton(
                     onPressed: onApprove,
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(255, 35, 117, 37)),
+                      backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF090975)),
                     ),
                     child: Text('Approve', style: TextStyle(color: Colors.white),),
                   ),

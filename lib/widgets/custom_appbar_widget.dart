@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loanlolly/screens/home_screen.dart';
 import 'package:loanlolly/widgets/custom_drawer.dart';
 import 'package:loanlolly/constants.dart';
 
@@ -7,7 +8,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback onTap;
   final String? headerText;
 
-  CustomAppBar({required this.scaffoldKey, required this.onTap, this.headerText});
+  CustomAppBar(
+      {required this.scaffoldKey, required this.onTap, this.headerText});
 
   @override
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
@@ -32,18 +34,36 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.asset(
-            'assets/images/logo.png',
-            height: 50.0,
-            width: 100.0,
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => HomeScreen(),
+                ),
+              );
+            },
+            child: Container(
+              padding: EdgeInsets.all(12.0),
+              child: Image.asset(
+                'assets/images/logo.png',
+                height: 50.0,
+                width: 100.0,
+              ),
+            ),
           ),
           if (headerText != null)
-            Text(
-              headerText!,
-              style: TextStyle(
-                color: AppConstants.whiteColor,
-                fontSize: 18.0,
-                fontWeight: FontWeight.bold,
+            Expanded(
+              child: Center(
+                child: Text(
+                  headerText!,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: AppConstants.whiteColor,
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
             ),
           if (headerText == null)
