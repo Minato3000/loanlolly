@@ -74,7 +74,7 @@ class CustomDrawer extends StatelessWidget {
                 onTap: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => HistoryScreen()),
+                    MaterialPageRoute(builder: (context) => LoanHistoryScreen()),
                   );
                 },
               ),
