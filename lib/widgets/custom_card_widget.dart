@@ -61,7 +61,7 @@ class CardWidget extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 8.0),
-                  Text('$percentage  '),
+                  Text('$percentage %'),
                 ],
               ),
             ),

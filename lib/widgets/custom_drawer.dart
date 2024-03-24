@@ -14,7 +14,7 @@ class CustomDrawer extends StatelessWidget {
   void logout(BuildContext context) {
     FirebaseAuth.instance.signOut();
 
-    Navigator.pushReplacementNamed(context, '/login'); 
+    Navigator.pushReplacementNamed(context, '/login');
   }
 
   @override
